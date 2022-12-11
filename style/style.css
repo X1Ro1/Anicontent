@@ -8,7 +8,7 @@
 /* Подключение шрифта */
 @font-face {
     font-family: "Steppe";
-    src: url(../Fonts/Steppe-Light.woff);
+    src: url(./../Fonts/Steppe-Light.woff);
 }
 
 .main {
