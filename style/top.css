@@ -41,8 +41,6 @@ button {
     justify-content: center;
     font-family: "Steppe", sans-serif;
     background-color: rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135);
 }
 
 .bt:hover {
