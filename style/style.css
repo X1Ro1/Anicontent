@@ -8,7 +8,7 @@
 /* Подключение шрифта */
 @font-face {
     font-family: "Steppe";
-    src: url("../Fonts/Steppe-Light.woff");
+    src: url(/Fonts/Steppe-Light.woff);
 }
 
 .main {
@@ -20,8 +20,8 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+    border-top: 1px solid rgba(0, 0, 0, 0.135); */
     font-family: 'Steppe', sans-serif, bold;
 }
 
@@ -134,8 +134,8 @@ nav ul li {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+    border-top: 1px solid rgba(0, 0, 0, 0.135); */
     font-family: 'Steppe', sans-serif, bold;
 }
 
@@ -240,34 +240,102 @@ nav ul li {
 /* 3 страница */
 
 
-.main1 {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+
+.page {
+    overflow: hidden;
     display: flex;
-    padding: 0 5%;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    background-color: #644c42;
-
-
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
-.yt {
+/* Футер */
+.header,
+.footer {
+    padding: 100px;
+    background-color: #141414;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.socials {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 20%;
+}
+
+.socials p{
+    color: white;
+
+}
+
+.footer h1 {
+    color: white;
+    font-family: 'Steppe';
+    font-size: 20px;
+    margin-left: 20%;
+
+}
+
+.footer h2 {
+    color: white;
+    font-family: 'Steppe';
+    font-size: 20px;
+    margin-left: 24%;
+
 }
 
 
-.text_3 {
-    font-size: 24px;
-    color: rgb(0, 0, 0);
-    gap: 30px;
-    text-align: center;
-    height: 100px;
+.footer a:hover{
+    color: rgb(200, 200, 200);
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20%;
+    font-family: 'Steppe'
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.about {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.about p{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20%;
+    font-family: 'Steppe'
+}
+
+.text12{
+    color: white;
+    margin: 17%;
     font-family: 'Steppe';
-    /* Задает жирность тексту */
-    font-weight: 800;
+    font-size: 13px;
+
 }
