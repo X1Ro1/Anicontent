@@ -6,109 +6,109 @@
 
 @font-face {
     font-family: "Steppe";
-    src: url("../Fonts/Steppe-Light.woff");
+    src: url(/Fonts/Steppe-Light.woff);
            
 }
 
-.logo {
-    width: 50px;
-}
-
-.gray a{
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-}
-
-.main {
-    width: 100%;
-    height: 120vh;
-    position: relative;
+.page {
+    overflow: hidden;
     display: flex;
-    padding: 0 5%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135);
-    font-family: "Steppe", sans-serif;
 }
 
-.card_1 {
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    border-radius: 24px;
-}
-
-.card_1 img {
-    margin-left: 10%;
-    margin-top: 3%;
-}
-
-.inform {
+/* Футер */
+.header,
+.footer {
+    padding: 100px;
+    background-color: #141414;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.socials {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
+    gap: 10px;
+    margin-left: 20%;
 }
 
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5px 8%;
-    display: flex;
-    align-items: center;
-    /* полезная штука */
-    justify-content: space-between;
-    background: #ffffff;
-    border: 1px solid rgb(191, 191, 191);
+.socials p{
+    color: white;
 
 }
 
-.btn:hover {
-    color: rgb(255, 0, 0);
-    cursor: pointer;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    /* добавляет место слева */
-    margin-left: 40px;
-}
-
-nav ul li a{
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    font-family: "Steppe", sans-serif;
-}
-
-.btn {
-    text-decoration: none;
-}
-
-.info {
-    text-decoration: none;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    height: 80px;
-    text-align: justify;
-    margin-left: 10%;
-    margin-top: 10%;
-}
-
-.info h2{
+.footer h1 {
+    color: white;
+    font-family: 'Steppe';
     font-size: 20px;
+    margin-left: 20%;
+
 }
 
-.info h1{
+.footer h2 {
+    color: white;
+    font-family: 'Steppe';
     font-size: 20px;
+    margin-left: 24%;
+
 }
 
-button { 
-    border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
+
+.footer a:hover{
+    color: rgb(200, 200, 200);
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
     font-size: 14px;
+    font-weight: 700;
+    margin-left: 20%;
+    font-family: 'Steppe'
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.about {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.about p{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20%;
+    font-family: 'Steppe'
+}
+
+.text12{
+    color: white;
+    margin: 17%;
+    font-family: 'Steppe';
+    font-size: 13px;
+
+}
+
+.line {
+    transform: translate(-90%, 0);
 }
