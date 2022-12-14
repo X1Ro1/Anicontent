@@ -1,98 +1,178 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новинки</title>
+    <link rel="stylesheet" href="style/new.css">
+    <link rel="stylesheet" href="style/up.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="button">
+                <div class="gray">
+                    <nav>
+                        <form action="index.html">
+                            <input type="image" src="img/logo2.png" class="logo" id="new">
+                        </form>
+                     
+                        <ul>
+                            <li><form action="index.html">
+                                <button class="btn">ГЛАВНАЯ</button>
+                            </form></li>
+                            
+                            <li><form action="bild.html">
+                                <button class="btn">ПОИСК</button>
+                            </form></li>
+    
+                            <li><form action="top.html">
+                                <button class="btn">РЕЙТИНГ</button>
+                            </form></li>
+                           
+                            <li><form action="">
+                                <button class="btn">НОВОСТИ</button>
+                            </form></li>
+                        </ul>
+    
+                        <div class="profil">
+                            <form action="bild.html">
+                                <input type="image" src="icon/2.svg" width="45px"> 
+                            </form>
+                        </div>
+                    </nav>
+    
+                    <div class="bg">
+                        <div class="text">
+    
+                            <img src="img/chibi1.png" alt="" width="100px">
+                            <p>Сайт v1.5 НОВОВВЕДЕНИЯ:</p>
+                            <p>- Добавлена контентная зона (расписание, новости, описание).</p>
+                            <p>- Добавлена анимация для всех кнопок.</p>
+                            <p>- Большинство кнопок были переделаны на button.</p>
+                            <p>- Добавлена новая страница, для недоработанных функций.</p>
+                            <p>- Изменена шапка меню.</p>
+                            <p>- Установлен временный логотип.</p>
+                            <p>- Заработала страница с новостями.</p>
+        
+                            <br>
+                            <br>
+        
+                            <p>Сайт v1.51 НОВОВВЕДЕНИЯ:</p>
+                            <P>- Изменены начальные изображения "Главной".</P>
+                            <p>- Изменены кнопки в топах.</p>
+        
+                            <br>
+                            <br>
+        
+                            <p>Сайт v1.6 НОВОВВЕДЕНИЯ:</p>
+                            <P>- Оптимизирован код главной страницы сайта.</P>
+                            <p>- Проведена чистка изображений.</p>
+                            <p>- Проведена незначительная коррекция ошибок сайта.</p>
+                            <p>- Изменена вкладка "О НАС".</p>
+                            <p>- Добавлена контентная зона в зоне выбора аниме.</p>
+                            <p>- Выполнена небольшая работа над кнопками.</p>
+                            <p>- Добавлена контентная зона в топах.</p>
+        
+                            <br>
+                            <br>
+        
+                            <p>Сайт v1.61 НОВОВВЕДЕНИЯ:</p>
+                            <p>- Доработаны кнопки "Назад", "Смотреть".</p>
+                            <p>- Исправлены фреймы "Новости", "Расписание", "Описание".</p>
+                            <p>- Отсортированы файлы html.</p>
+                            <p>- Полностью переработаны старницы с аниме. Исправлены все недочеты.</p>
+                            <P>- Удалось оцентрировать кнопку "НАВЕРХ". Объект присоединен якорем id, также добавлен на странцу новостей.</p>
+                            <p>- Все изображения в топах стали одного размера.</p>
+                            <p>- Немного улучшена вкладка новостей.</p>
+                            <p>- Проведены незначительные улучшения интерфейса.</p>
+    
+                            <br>
+                            <br>
+    
+                            <p>Сайт v1.62 НОВОВВЕДЕНИЯ:</p>
+                            <p>- Создан рабочий Футер для сайта.</p>
+                            <p>- Изменена меню сайта.</p>
+                            
 
-.logo {
-    width: 50px;
-}
+                            <br>
+                            <br>
 
-@font-face {
-    font-family: "Steppe";
-    src: url("../Fonts/Steppe-Light.woff");
-           
-}
+                            <p>Сайт v1.64 НОВОВВЕДЕНИЯ:</p>
+                            <p>Сайт оптимизирован на телефоны (на 20%, но работает все через жопу)</p>
+
+                            <br>
+                            <br>
+
+                            <p>Сайт v1.65 НОВОВВЕДЕНИЯ:</p>
+                            <p>Полностью переработан футер. Теперь он стал удобным, а главное не ломается!</p>
 
 
-.main {
-    width: 100%;
-    height: 200vh;
-    position: relative;
-    display: flex;
-    padding: 0 5%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.04);
-    font-family: "Steppe", sans-serif;
-}
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+        
+                        <div class="str">
+                            <a href="" class="up" id="#new">
+                                <p align="center"><svg class="strelka-top-1" viewbox="0 0 60 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"></path></svg></p>
+                                <p align="center">ПОДНЯТЬСЯ НАВЕРХ</p>
+                            </a> 
+        
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section>
+    <div class="container">
+        <div class="row">
+            <div class="clo-1">
+                <h1>Социальные сети:</h1>
+                        <div class="yt">
+                            <img src="icon/vk.svg" alt="" class="yt">
+                            <a href="">Anicontent</a>
+                        </div>
+    
+                        <div class="yt">
+                            <img src="icon/youtube.svg" alt="" class="yt">
+                            <a href="">Anicontent: Новости аниме</a>
+                        </div>
+                        <div class="yt">
+                            <img src="icon/telegram.svg" alt="" class="yt">
+                            <a href="">@Anicontent</a>
+                        </div>
+                        <div class="yt">
+                            <img src="icon/instagram.svg" alt="" class="yt">
+                            <a href="">Anicontent_official</a>
+                        </div>
+            </div>
+            <div class="clo-1">
+                <h1>Навигация:</h1>
+                <a href="index.html">Главная</a>
+                <a href="bild.html">Поиск</a>
+                <a href="top.html">Рейтинг</a>
+                <a href="" id="new">Новости</a>
 
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5px 8%;
-    display: flex;
-    align-items: center;
-    /* полезная штука */
-    justify-content: space-between;
-    background: #ffffff;
-    border: 1px solid rgb(191, 191, 191);
+            </div>
+            <div class="clo-1">
+                <h1>Связаться с нами:</h1>
+                <a href="tel:89142298032">+79142298032</a>
+                <p>DOTN_Games@gmail.com</p>
+            </div>
 
-}
+            <div class="clo-1">
+                <p class="wi">© 2022-2022 Anicontent</p>
+            </div>
+        </div>
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    /* добавляет место слева */
-    margin-left: 40px;
-}
+    </div>
 
-.btn:hover {
-    color: rgb(255, 0, 0);
-    cursor: pointer;
-}
-
-nav ul li a{
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    font-family: "Steppe", sans-serif;
-    font-weight: 700;
-}
-
-.btn {
-    text-decoration: none;
-}
-
-button { 
-    border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
-    font-size: 14px;
-}
-
-.up p{
-    font-size: 14px;
-    font-weight: 700;
-    color: black;
-}
-
-.up p:hover{
-    color: red;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.str a{
-    text-decoration: none;
-}
-
-.bg {
-    background-color: white;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-}
-
-.text p{
-    text-align: justify;
-}
+   </section>
+</body>
+</html>
