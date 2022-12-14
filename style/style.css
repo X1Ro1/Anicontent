@@ -1,229 +1,515 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
     
-}
-
-/* Подключение шрифта */
-@font-face {
-    font-family: "Steppe";
-    src: url("../Fonts/Steppe-Light.woff");
-}
-
-.main {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    padding: 0 5%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.04);
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135); */
-    font-family: 'Steppe', sans-serif, bold;
-}
-
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 5px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    border: 1px solid rgb(191, 191, 191);
-}
-
-.back {
-    /* чтобы фон никуда не смещался */
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-button { 
-    border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
-    font-size: 14px; border-bottom: rgb(121, 121, 121); 
-}
-
-.btn:hover {
-    color: rgb(255, 0, 0);
-    cursor: pointer;
-}
-
-nav .logo {
-    width: 50px;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    /* добавляет место слева */
-    margin-left: 40px;
-}
-
-.content {
-    color: rgb(0, 0, 0);
-}
-
-
-.content h1{
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-    height: 100px;
-    font-family: "Steppe", sans-serif;
-}
-
-.top{
-    padding: 10px 20px;
-    height: 150px;
-    text-align: center;
-}
-
-.top a{
-    font-size: 16px;
-    color: black;
-    font-family: "Steppe";
-}
-
-/* значение hover меняет кнопку на другую, придавая эффект анимации */
-.top a:hover {
-    color: red;
-}
-
-
-.poster {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-}
-
-.text_1 {
-    font-size: 23px;
-    color: rgb(0, 0, 0);
-    font-family: "Steppe", sans-serif;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-/* 2 страница */
-
-.main2 {
-    width: 100%;
-    height: 130vh;
-    position: relative;
-    display: flex;
-    padding: 0 5%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.04);
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    border-top: 1px solid rgba(0, 0, 0, 0.135); */
-    font-family: 'Steppe', sans-serif, bold;
-}
-
-/* Важная сетка */
-.content_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    /* Подключение шрифта */
+    @font-face {
+        font-family: "Steppe";
+        src: url("../Fonts/Steppe-Light.woff");
+    }
     
+    .main {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        font-family: 'Steppe', sans-serif, bold;
+    }
+    
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 5px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffffff;
+        border: 1px solid rgb(191, 191, 191);
+    }
+
+    .poster .img {
+        width: 250px;
+    }
+    
+    .back {
+        /* чтобы фон никуда не смещался */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    
+    button { 
+        border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
+        font-size: 14px; border-bottom: rgb(121, 121, 121); 
+    }
+    
+    .btn:hover {
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        width: 50px;
+    }
+    
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        /* добавляет место слева */
+        margin-left: 40px;
+    }
+    
+    .content {
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    .content h1{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+        height: 100px;
+        font-family: "Steppe", sans-serif;
+    }
+    
+    .top{
+        padding: 10px 20px;
+        height: 150px;
+        text-align: center;
+    }
+    
+    .top a{
+        font-size: 16px;
+        color: black;
+        font-family: "Steppe";
+    }
+    
+    /* значение hover меняет кнопку на другую, придавая эффект анимации */
+    .top a:hover {
+        color: red;
+    }
+    
+    
+    .poster {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+    
+    .text_1 {
+        font-size: 23px;
+        color: rgb(0, 0, 0);
+        font-family: "Steppe", sans-serif;
+        text-align: center;
+    }
+
+    .profil {
+        width: 45px;
+    }
+    
+    
+    
+    /* 2 страница */
+    
+    .main2 {
+        width: 100%;
+        height: 130vh;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+        border-top: 1px solid rgba(0, 0, 0, 0.135); */
+        font-family: 'Steppe', sans-serif, bold;
+    }
+    
+    /* Важная сетка */
+    .content_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        
+    }
+    
+    /* Описание */
+    
+    .card_poster_con {
+        width: 400px;
+        height:400px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_con p{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    .card_poster_con h1{
+        transform: translate(17%, 0);
+        padding: 10%;
+    }
+    
+    /* Блок новостей */
+    
+    .card_poster_new {
+        width: 400px;
+        height: 680px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_new h1{
+        transform: translate(17%, 0);
+        padding: 10%;
+    }
+    
+    .card_poster_new h2{
+        transform: translate(23%, 0);
+        padding: 10%;
+    }
+    
+    .tg p {
+        margin: 12%;  
+    }
+    
+    .video1 {
+        transform: translate(18%, 0);
+    }
+    .color {
+        color: rgb(64, 64, 245);
+    }
+    
+    
+    /* расписание */
+    
+    .schedule {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 8%;
+        transform: translate(10%, 0);
+    }
+    
+    .line1 a{
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 900;
+        color: black;
+    }
+    
+    .line1 a:hover{
+        color: red;
+    }
+    
+    .line1 {
+        transform: translate(-86%, 0);
+    }
+    
+    .line1 p{
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
 }
 
-/* Описание */
-
-.card_poster_con {
-    width: 400px;
-    height:400px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-}
-
-.card_poster_con p{
-    margin-left: 12%;
-    margin-right: 12%;
-}
-
-.card_poster_con h1{
-    transform: translate(17%, 0);
-    padding: 10%;
-}
-
-/* Блок новостей */
-
-.card_poster_new {
-    width: 400px;
-    height: 680px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-}
-
-.card_poster_new h1{
-    transform: translate(17%, 0);
-    padding: 10%;
-}
-
-.card_poster_new h2{
-    transform: translate(23%, 0);
-    padding: 10%;
-}
-
-.tg p {
-    margin: 12%;  
-}
-
-.video1 {
-    transform: translate(18%, 0);
-}
-.color {
-    color: rgb(64, 64, 245);
-}
 
 
-/* расписание */
 
-.schedule {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 8%;
-    transform: translate(10%, 0);
-}
 
-.line1 a{
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: 900;
-    color: black;
-}
 
-.line1 a:hover{
-    color: red;
-}
 
-.line1 {
-    transform: translate(-86%, 0);
-}
 
-.line1 p{
-    font-size: 12px;
-    text-decoration: none;
-    color: black;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* На телефоны */
+
+@media (min-width: 390px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    /* Подключение шрифта */
+    @font-face {
+        font-family: "Steppe";
+        src: url("../Fonts/Steppe-Light.woff");
+    }
+    
+    .main {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        font-family: 'Steppe', sans-serif, bold;
+    }
+    
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 5px 8%;
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        background: #ffffff;
+        border: 1px solid rgb(191, 191, 191);
+    }
+    
+    .back {
+        /* чтобы фон никуда не смещался */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    
+    button { 
+        border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
+        font-size: 10px; border-bottom: rgb(121, 121, 121); 
+    }
+    
+    .btn:hover {
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        width: 20px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 2.5%;
+    }
+    
+    .content {
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    .content h1{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+        height: 100px;
+        font-family: "Steppe", sans-serif;
+    }
+    
+    .top{
+        height: 100px;
+        text-align: center;
+        width: 130%;
+        transform: translate(-12%, 0);
+    }
+    
+    .top a{
+        font-size: 10px;
+        color: black;
+        font-family: "Steppe";
+        align-items: center;
+    }
+    
+    /* значение hover меняет кнопку на другую, придавая эффект анимации */
+    .top a:hover {
+        color: red;
+    }
+    
+    
+    .poster {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .img {
+        width: 100px;
+    }
+    
+    .text_1 {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        font-family: "Steppe", sans-serif;
+        text-align: center;
+    }
+
+    nav .profil {
+        width: 25px;
+    }
+    
+    
+    
+    /* 2 страница */
+    
+    .main2 {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+        border-top: 1px solid rgba(0, 0, 0, 0.135); */
+        font-family: 'Steppe', sans-serif, bold;
+    }
+    
+    /* Важная сетка */
+    .content_2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        
+    }
+    
+    /* Описание */
+    
+    .card_poster_con {
+        width: 300px;
+        height: 580px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_con p{
+        margin-left: 12%;
+        margin-right: 12%;
+        font-size: 12px;
+    }
+    
+    .card_poster_con h1{
+        transform: translate(15%, 0);
+        padding: 10%;
+        font-size: 20px;
+    }
+    
+    /* Блок новостей */
+    
+    .card_poster_new {
+        width: 300px;
+        height: 580px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_new h1{
+        transform: translate(17%, 0);
+        padding: 10%;
+        font-size: 20px;
+    }
+    
+    .card_poster_new h2{
+        transform: translate(23%, 0);
+        padding: 10%;
+        font-size: 20px;
+    }
+    
+    .tg p {
+        margin: 12%; 
+        font-size: 12px; 
+    }
+
+    .color {
+        color: rgb(64, 64, 245);
+    }
+
+    .video1 {
+        width: 230px;
+        height: 130px;
+        border-radius: 20px;
+        transform: translate(8%);
+    }
+    
+    
+    /* расписание */
+    
+    .schedule {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        transform: translate(5%, 0);
+    }
+
+    .icon {
+        width: 40px;
+    }
+    
+    .line1 a{
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 900;
+        color: black;
+    }
+    
+    .line1 a:hover{
+        color: red;
+    }
+    
+    .line1 {
+        transform: translate(-50%, 0);
+        width: 120%;
+        height: 90px;
+    }
+    
+    .line1 p{
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
 }
