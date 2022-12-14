@@ -121,7 +121,7 @@
 
 /* На телефон */
 
-@media (min-width: 390px) {
+@media (min-width: 300px) {
     *{
         margin: 0;
         padding: 0;
