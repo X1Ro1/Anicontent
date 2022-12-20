@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: "Steppe";
+    src: url("../Fonts/Steppe-Light.woff");
+           
+}
+
+.logo {
+    width: 50px;
+}
+
+.text {
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.gray a{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+button { 
+    border: none; outline: none; background-color: white; font-family: 'Steppe'; font-weight: 600;
+    font-size: 14px;
+}
+
+.main {
+    width: 100%;
+    height: 340vh;
+    position: relative;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Steppe", sans-serif;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.bt:hover {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 8%;
+    display: flex;
+    align-items: center;
+    /* полезная штука */
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* добавляет место слева */
+    margin-left: 40px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Steppe", sans-serif;
+}
+
+.bt {
+    text-decoration: none;
+}
+
+.poster{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.poster a{
+    text-decoration: none;
+    font-weight: 900;
+    color: blue;
+}
+
+.poster a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.back {
+    /* чтобы картинка никуда не смещалась */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.text h1{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Steppe", sans-serif;
+    height: 60px;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+.poster a{
+    color: rgb(77, 60, 232);
+}
+
+.text1 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Steppe";
+    text-align: center;
+    font-weight: 800;
+}
+
+.bg {
+    background-color: white;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+.up p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.up p:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.str a{
+    text-decoration: none;
+}
