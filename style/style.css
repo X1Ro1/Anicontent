@@ -1,0 +1,164 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body {
+        max-width: 1500px;
+        min-height: 2000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Подключение шрифта */
+    @font-face {
+        font-family: "Steppe";
+        src: url("../Fonts/Steppe-Light.woff");
+    }
+    
+    .main {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+        border-top: 1px solid rgba(0, 0, 0, 0.135); */
+        font-family: 'Steppe', sans-serif, bold;
+    }
+
+    .poster {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+    
+    .text_1 {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family: "Steppe", sans-serif;
+        text-align: center;
+    }
+ 
+    /* 2 страница */
+    
+    .main2 {
+        width: 100%;
+        height: 130vh;
+        position: relative;
+        display: flex;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.04);
+        font-family: 'Steppe', sans-serif, bold;
+    }
+    
+    .content_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        
+    }
+    
+    /* Описание */
+    
+    .card_poster_con {
+        width: 400px;
+        height:400px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_con p{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    .card_poster_con h1{
+        transform: translate(17%, 0);
+        padding: 10%;
+    }
+    
+    /* Блок новостей */
+    
+    .card_poster_new {
+        width: 400px;
+        height: 680px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .card_poster_new h1{
+        transform: translate(17%, 0);
+        padding: 10%;
+    }
+    
+    .card_poster_new h2{
+        transform: translate(23%, 0);
+        padding: 10%;
+    }
+    
+    .tg p {
+        margin: 12%;  
+    }
+    
+    .video1 {
+        transform: translate(18%, 0);
+    }
+    .color {
+        color: rgb(64, 64, 245);
+    }
+    
+    
+    /* расписание */
+    
+    .schedule {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 8%;
+        transform: translate(10%, 0);
+    }
+    
+    .line1 a{
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 900;
+        color: black;
+    }
+    
+    .line1 a:hover{
+        color: red;
+    }
+    
+    .line1 {
+        transform: translate(-70%, 0);
+    }
+
+    .line1 p{
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .video1 {
+        width: 250px;
+    }
+
+    .img {
+        width: 250px;
+    }
+
+    .icon {
+        width: 60px;
+    }
