@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px;
+}
+
+@font-face {
+    font-family: "Steppe";
+    src: url("../Fonts/Steppe-Light.woff");
+           
+}
+
+
+.main {
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.04);
+    font-family: "Steppe", sans-serif;
+}
+
+.up p{
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.up p:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.str a{
+    text-decoration: none;
+}
+
+.bg {
+    background-color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+.text p{
+    text-align: justify;
+}
